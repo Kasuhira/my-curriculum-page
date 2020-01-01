@@ -1,3 +1,28 @@
+body p {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 10px;
+}
+
+body p:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 5px;
+  border: dashed #666 2px;
+}
+
+body img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 nav {
   background-color: #666;
   text-align: center;
@@ -21,15 +46,49 @@ nav ul li:hover {
   transition: all 0.2s;
 }
 
-section img {
+.introduction img {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  border-radius: 50%;
 }
 
-section img:hover {
-  -webkit-filter: brightness(1.5);
-          filter: brightness(1.5);
+.introduction img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.introduction p {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.introduction p:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 5px;
+  border: dashed #666 2px;
+}
+
+.introduction .row {
+  max-width: 720px;
+  margin: auto;
+}
+
+.abilities img {
+  border-radius: 50%;
+  border: 3px solid #666;
+  padding: 0;
+}
+
+.abilities .not-ready {
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
 }
 /*# sourceMappingURL=main.css.map */
