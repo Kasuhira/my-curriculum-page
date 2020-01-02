@@ -9,8 +9,6 @@
   background-color: rgba($color: #000000, $alpha: 0.1);
       transform: scale(1.02);
       transition: all 0.2s;
-      border-radius: 5px;
-      border: dashed #666 2px;
 }
 
 @mixin photoHover {
@@ -20,8 +18,9 @@
 }
 
 body {
+  background-color: whitesmoke !important;
   p {
-    transition: all 0.2s;
+    transition: all 2s;
     padding: 10px;
     &:hover {
       @include fancyHover();
@@ -32,6 +31,12 @@ body {
       @include photoHover();
     }
   }
+}
+
+main {
+  max-width: 1300px ;
+  margin:auto ;
+  background-color: white;
 }
 
 nav {
@@ -45,11 +50,7 @@ nav {
 
   ul li {
     background-color: $color-secondary;
-    transition:all 0.4s;
-
-    &:hover {
-      @include hoverEffect();
-    }
+    transition:all 2s; 
   }
 }
 
@@ -59,12 +60,6 @@ nav {
     border-radius: 50%;
     &:hover{
       @include photoHover();
-    }
-  }
-  p{
-    transition:all 0.1s;
-    &:hover{
-      @include fancyHover();
     }
   }
   .row{
@@ -80,6 +75,15 @@ nav {
     padding: 0;
   }
   .not-ready {
-    filter: brightness(0.2);
+    filter: grayscale(1);
+  }
+}
+
+footer {
+  background-color: $color-primary;
+  color: $color-accent;
+
+  .fa{
+    color : white;
   }
 }
